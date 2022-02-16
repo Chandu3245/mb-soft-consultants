@@ -1,0 +1,33 @@
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="container-fluid">
+        <a class="navbar-brand" routerLink="/" [innerHTML]="appLables.title"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0" id="menuItems">
+                <ng-container *ngFor="let item of menuItems">
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" aria-current="page" [routerLink]='item.route' routerLinkActive="active"
+                            [innerHTML]="item.label"></a>
+                    </li>
+                </ng-container>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="rightMenuItems">
+                <ng-container *ngFor="let item of rightMenuItems">
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" aria-current="page" [routerLink]='item.route' routerLinkActive="active"
+                            [innerHTML]="item.label"></a>
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div>
+    <router-outlet></router-outlet>
+</div>
+<footer class="bd-footer py-5 mt-5 bg-light">
+Hello
+</footer>

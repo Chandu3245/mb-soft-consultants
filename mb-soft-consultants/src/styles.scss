@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+$theme-colors: (
+    "primary": #ff4136,
+    "danger": #ff4136,
+    "dark": #ff4136
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+// @import "node_modules/bootstrap/scss/variables";
+// @import "node_modules/bootstrap/scss/mixins";
+// @import "node_modules/bootstrap/scss/root";
