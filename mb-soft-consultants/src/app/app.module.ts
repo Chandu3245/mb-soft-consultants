@@ -11,6 +11,7 @@ import { AngularConsultantsModule } from './feature-modules/angular-consultants/
 import { PowerbiConsultantsModule } from './feature-modules/powerbi-consultants/powerbi-consultants.module';
 import { IntroComponent } from './core/components/intro/intro.component';
 import { FooterComponent } from './core/components/footer/footer.component';
+import { ShareModule } from './share/share.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './core/components/footer/footer.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularConsultantsModule,
-    PowerbiConsultantsModule
+    PowerbiConsultantsModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+<div class="row justify-content-center sub-header shadow mb-4 mx-4">
+    <header class="col-sm-12 col-md-6 col-lg-6 navbar navbar-expand-lg" style="width: unset;">
+        <nav class="container-fluid">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0" id="angularMenuItems">
+                <ng-container *ngFor="let item of menuItems">
+                    <li class="nav-item col-6 col-md-auto mx-2">
+                        <a class="nav-link pb-2 text-secondary-gradient" aria-current="page" [routerLink]='item.route'
+                            routerLinkActive="active" [innerHTML]="item.label"></a>
+                    </li>
+                </ng-container>
+            </ul>
+        </nav>
+    </header>
+</div>

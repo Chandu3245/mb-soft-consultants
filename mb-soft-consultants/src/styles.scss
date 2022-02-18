@@ -38,11 +38,11 @@ $theme-colors: (
 }
 
 .bg-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(to bottom right, $primary, $secondary);
 }
 
 .bg-secondary-gradient {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(to bottom right, $secondary, $primary);
 }
 
 /*** Button ***/

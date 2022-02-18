@@ -12,7 +12,13 @@ export class AppStringsService {
       home: 'home',
       angular: 'UI Development',
       powerbi: 'Power BI',
-      about: 'About'
+      about: 'About',
+      intro: 'Introduction',
+      experience: 'Experience',
+      skills: 'Skills',
+      testimony: 'Testimony',
+      contact: 'Contact',
+      achievements: 'Achievements'
     }
    }
 }
