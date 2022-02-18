@@ -1,0 +1,20 @@
+
+@import '../../../../styles.scss';
+
+.span-label{
+    border: 1px solid $primary;
+    border-radius: 20px;
+    border: 1px solid $primary;
+    border-radius: 20px;
+    padding: 0 15px;
+    background: $primary;
+    color: #fff;
+}
+
+.image-bg {
+    background-image: url('/assets/images/intro.jpg') !important;
+}
+
+i {
+    font-size: 20px;
+}

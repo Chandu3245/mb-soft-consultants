@@ -1,15 +1,142 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+// Include any default variable overrides here (though functions won't be available)
+$primary: #4294E3;
+$secondary: #8F12FD;
+$light: #FFFFFF;
+$dark: #262B47;
 
 $theme-colors: (
-    "primary": #ff4136,
-    "danger": #ff4136,
-    "dark": #ff4136
+    "primary": $primary,
+    "secondary": $secondary,
+    "dark": $dark,
+    "light": $light
 );
-@import "node_modules/bootstrap/scss/bootstrap";
 
-// 2. Include any default variable overrides here
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-// 3. Include remainder of required Bootstrap stylesheets
-// @import "node_modules/bootstrap/scss/variables";
-// @import "node_modules/bootstrap/scss/mixins";
-// @import "node_modules/bootstrap/scss/root";
+// Then add additional custom code here
+
+.cursor {
+    cursor: pointer;
+}
+
+/*** Gradient Text & BG ***/
+.text-primary-gradient {
+    background: linear-gradient(to bottom right, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-secondary-gradient {
+    background: linear-gradient(to bottom right, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+}
+
+.bg-secondary-gradient {
+    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+}
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+}
+
+.btn.btn-primary-gradient,
+.btn.btn-secondary-gradient {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.btn.btn-primary-gradient::after,
+.btn.btn-secondary-gradient::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.btn.btn-primary-gradient,
+.btn.btn-secondary-gradient::after {
+    background: linear-gradient(to bottom right, $primary, $secondary);
+}
+
+.btn.btn-secondary-gradient,
+.btn.btn-primary-gradient::after {
+    background: linear-gradient(to bottom right, $secondary, $primary);
+}
+
+.btn.btn-primary-gradient:hover::after,
+.btn.btn-secondary-gradient:hover::after {
+    opacity: 1;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+    border: none;
+    background: linear-gradient(to bottom right, $primary, $secondary);
+}
+//end
+
+//footer set up
+.container-area{
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh;
+  }
+  
+  .content {
+    flex: 1 0 auto; 
+  }
+  
+  .footer {
+    flex-shrink: 0; 
+  }
+
+  //ends

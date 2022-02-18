@@ -9,13 +9,17 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 import { AboutComponent } from './core/components/about/about.component';
 import { AngularConsultantsModule } from './feature-modules/angular-consultants/angular-consultants.module';
 import { PowerbiConsultantsModule } from './feature-modules/powerbi-consultants/powerbi-consultants.module';
+import { IntroComponent } from './core/components/intro/intro.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PageNotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    IntroComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

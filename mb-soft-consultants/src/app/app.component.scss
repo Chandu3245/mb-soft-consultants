@@ -1,11 +1,44 @@
-/* ul#menuItems > li::before {
-    content: "";
-    display: block;
+@import '../styles.scss';
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.active{
+    border-bottom: 2px $primary solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav-link{
     position: relative;
-    z-index: 1;
-    left: 18px;
-    top: 0;
-    bottom: 0;
-    border: 1px dotted;
-    border-width: 0 0 0 1px;
-} */
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+li.nav-item > a:hover:not(.active){
+    border-bottom: 2px $primary solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.footer {
+    // margin-top: 6rem;
+    // padding-top: 9rem;
+    background: linear-gradient(to bottom right, $primary, $secondary);
+    // background-position: left 0px bottom 0px, right 0px top 50%, center top;
+    background-repeat: no-repeat;
+}
+
+.pb-2{
+    padding-bottom: 0.2rem !important;
+}

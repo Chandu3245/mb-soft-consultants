@@ -9,13 +9,11 @@ import { MenuItems } from './data-models/menu-items.model';
 })
 export class AppComponent {
   menuItems: Array<MenuItems> = [];
-  rightMenuItems: Array<MenuItems> = [];
   appLables: any;
 
   constructor(public appStringsService: AppStringsService) {
     this.appLables = this.appStringsService.appStrings;
     this.createMenuItems();
-    this.createRightMenuItems();
   }
 
   createMenuItems() {
@@ -27,16 +25,11 @@ export class AppComponent {
       {
         label: this.appLables.powerbi,
         route: 'powerbi-consultants'
-      }
-    ];
-  }
-
-  createRightMenuItems() {
-    this.rightMenuItems = [
+      },
       {
         label: this.appLables.about,
         route: 'about'
       }
-    ]
+    ];
   }
 }
