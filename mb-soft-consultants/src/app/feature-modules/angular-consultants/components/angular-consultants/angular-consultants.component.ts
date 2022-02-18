@@ -24,23 +24,23 @@ export class AngularConsultantsComponent implements OnInit {
     this.menuItems = [
       {
         label: this.appLables.intro,
-        route: 'intro'
+        route: 'angular-consultants#intro'
       },
       {
         label: this.appLables.experience,
-        route: 'experience'
+        route: 'angular-consultants#experience'
       },
       {
         label: this.appLables.skills,
-        route: 'skills'
+        route: 'angular-consultants#skills'
       },
       {
         label: this.appLables.testimony,
-        route: 'testimony'
+        route: 'angular-consultants#testimony'
       },
       {
         label: this.appLables.contact,
-        route: 'contact'
+        route: 'angular-consultants#contact'
       }
     ];
   }
