@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SocialMedia } from 'src/app/data-models/profile.model';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  @Input() contact: SocialMedia;
   constructor() { }
 
   ngOnInit(): void {

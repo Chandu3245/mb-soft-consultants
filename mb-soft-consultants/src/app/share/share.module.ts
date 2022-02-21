@@ -7,15 +7,20 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SkillsComponent } from './components/skills/skills.component';
 import { TestimonyComponent } from './components/testimony/testimony.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { TrainingComponent } from './components/training/training.component';
 
 
 
 @NgModule({
-  declarations: [SubHeaderComponent, IntroSelfComponent, ExperienceComponent, SkillsComponent, TestimonyComponent, ContactComponent],
+  declarations: [SubHeaderComponent, IntroSelfComponent, 
+    ExperienceComponent, SkillsComponent, TestimonyComponent, 
+    ContactComponent, TrainingComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [SubHeaderComponent, IntroSelfComponent, ExperienceComponent, SkillsComponent, TestimonyComponent, ContactComponent]
+  exports: [SubHeaderComponent, IntroSelfComponent, 
+    ExperienceComponent, SkillsComponent, TestimonyComponent, 
+    ContactComponent, TrainingComponent]
 })
 export class ShareModule { }
