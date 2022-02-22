@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  trackingId: "G-RX31XYL65C"
 };
