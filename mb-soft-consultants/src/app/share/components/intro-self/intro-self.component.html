@@ -1,5 +1,6 @@
-<h4 class="text-center" id="intro">Introduction</h4>
 <div class="container-fluid px-4 mb-4">
+    <h4 class="text-center" id="intro">Introduction</h4>
+    <div class="bg-primary-gradient he2 my-2"></div>
     <div class="row">
         <div class="col d-flex align-items-center">
             {{intro.description}}
@@ -8,9 +9,12 @@
             <img src="{{intro.selfImage}}" class="inner-circle" alt="">
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            gmail Whatsapp instagram youtube linkedin skype gitlab fb twitter
-        </div>
+    <div class="">
+        <div class="d-flex justify-content-end">
+            <ng-container *ngFor="let media of intro.socialMedia">
+                <button type="button" class="btn btn-primary mx-4">
+                    <a href="{{media.link}}" target="_blank"><i class="bi {{media.icon}}"></i> {{media.title}} </a>
+                </button>
+            </ng-container>
     </div>
 </div>

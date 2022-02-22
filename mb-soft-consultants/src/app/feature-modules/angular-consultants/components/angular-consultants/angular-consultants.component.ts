@@ -42,6 +42,10 @@ export class AngularConsultantsComponent implements OnInit, OnDestroy {
   createMenuItems() {
     this.menuItems = [
       {
+        label: this.appLables.training,
+        route: 'angular-consultants#training'
+      },
+      {
         label: this.appLables.intro,
         route: 'angular-consultants#intro'
       },

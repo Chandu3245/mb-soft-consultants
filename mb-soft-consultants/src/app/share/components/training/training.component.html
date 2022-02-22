@@ -1,12 +1,20 @@
-<h4 class="text-center" id="training">Trainings</h4>
 <div class="container-fluid px-4 mb-4">
+    <h4 class="text-center" id="training">Trainings</h4>
+    <div class="bg-primary-gradient he2 my-2"></div>
     <div class="row">
         <div class="col">
-            <div class="card shadow">
-                <div class="card-body">
-                    <img src="{{ training.trainingImage}}" alt="Trainings">
-                </div>
-            </div>
+            <!-- <div class="card shadow">
+                <div class="card-body"> -->
+                    <div class="row d-flex align-items-center">
+                        <div class="col-4">
+                            <img src="{{ training.trainingImage}}" alt="Trainings">
+                        </div>
+                        <div class="col h4">
+                            {{training.desc}}
+                        </div>
+                    </div>
+                <!-- </div>
+            </div> -->
         </div>
     </div>
 </div>

@@ -1,4 +1,11 @@
+@import '../../../../styles.scss';
+
 img {
     width: auto;
     height: 1.5rem;
+}
+
+a {
+    color: $light !important;
+    text-decoration: unset !important;
 }

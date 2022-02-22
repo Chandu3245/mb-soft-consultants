@@ -18,7 +18,8 @@ export class AppStringsService {
       skills: 'Skills',
       testimony: 'Testimony',
       contact: 'Contact',
-      achievements: 'Achievements'
+      achievements: 'Achievements',
+      training: "Trainings"
     }
    }
 }

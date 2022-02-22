@@ -1,0 +1,10 @@
+@import '../../../../styles.scss';
+
+ul > li {
+    list-style-type: none !important;
+}
+
+.card-header {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, $secondary, $primary);
+}

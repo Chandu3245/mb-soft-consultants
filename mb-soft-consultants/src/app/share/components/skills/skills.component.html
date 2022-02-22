@@ -1,24 +1,60 @@
-<h4 class="text-center" id="skills">Skills</h4>
 <div class="container-fluid px-4 mb-4">
+    <h4 class="text-center" id="skills">Skills</h4>
+    <div class="bg-primary-gradient he2 my-2"></div>
     <div class="row">
         <div class="col">
             <div class="card shadow">
+                <div class="card-header">
+                    {{skills.fe?.desc}}
+                </div>
                 <div class="card-body">
-                    {{ skills | json}}
+                    <ul>
+                        <li *ngFor="let fe of skills.fe?.tech">
+                            <h6>{{fe}}</h6>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card shadow">
+                <div class="card-header">
+                    {{skills.be?.desc}}
+                </div>
                 <div class="card-body">
-                    Skill 2
+                    <ul>
+                        <li *ngFor="let be of skills.be?.tech">
+                            <h6>{{be}}</h6>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card shadow">
+                <div class="card-header">
+                    {{skills.tools?.desc}}
+                </div>
                 <div class="card-body">
-                    Skill 3
+                    <ul>
+                        <li *ngFor="let tool of skills.tools?.tech">
+                            <h6>{{tool}}</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-header">
+                    {{skills.other?.desc}}
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li *ngFor="let other of skills.other?.tech">
+                            <h6>{{other}}</h6>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
