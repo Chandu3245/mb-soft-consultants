@@ -1,11 +1,11 @@
-<div class="container-fluid px-4 mb-4">
-    <h4 class="text-center" id="contact">Contact Me</h4>
-    <div class="bg-primary-gradient he2 my-2"></div>
-    <div class="d-flex justify-content-end">
-    <ng-container *ngFor="let media of contact">
-        <button type="button" class="btn btn-primary mx-4">
+<ng-container *ngFor="let media of contact">
+    <button type="button" class="btn btn-primary mx-4">
+        <div *ngIf="media.title == 'Mail'; else rest">
+            <a href="mailto:{{media.link}}"><i class="bi {{media.icon}}"></i> {{media.title}} </a>
+
+        </div>
+        <ng-template #rest>
             <a href="{{media.link}}" target="_blank"><i class="bi {{media.icon}}"></i> {{media.title}} </a>
-        </button>
-    </ng-container>
-</div>
-</div>
+        </ng-template>
+    </button>
+</ng-container>

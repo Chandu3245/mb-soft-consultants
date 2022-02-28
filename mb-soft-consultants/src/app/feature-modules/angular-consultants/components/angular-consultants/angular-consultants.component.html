@@ -1,8 +1,26 @@
 <app-sub-header [menuItems]="menuItems"></app-sub-header>
 <!-- <app-intro-self [intro]="uiData$ | async"></app-intro-self> -->
-<app-training [training]="training" ></app-training>
-<app-intro-self [intro]="intro"></app-intro-self>
+<div *ngIf="training">
+    <app-training [training]="training" ></app-training>
+    <div class="d-flex justify-content-end mb-2">
+        <app-contact [contact]="contact"></app-contact>
+    </div>
+</div>
+<div *ngIf="intro">
+    <app-intro-self [intro]="intro"></app-intro-self>
+    <div class="d-flex justify-content-end mb-2">
+        <app-contact [contact]="contact"></app-contact>
+    </div>
+</div>
 <!-- <app-experience></app-experience> -->
-<app-skills [skills]="skills"></app-skills>
+<div *ngIf="skills">
+    <app-skills [skills]="skills"></app-skills>
+</div>
 <!-- <app-testimony></app-testimony> -->
-<app-contact [contact]="contact"></app-contact>
+<div class="container-fluid px-4 mb-4"  *ngIf="contact">
+    <h4 class="text-center" id="contact">Contact Me</h4>
+    <div class="bg-primary-gradient he2 my-2"></div>
+    <div class="d-flex justify-content-end">
+        <app-contact [contact]="contact"></app-contact>
+    </div>
+</div>

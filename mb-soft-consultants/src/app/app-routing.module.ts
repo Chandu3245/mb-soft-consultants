@@ -8,7 +8,7 @@ import { PageNotFoundComponent } from "./core/components/page-not-found/page-not
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
+    // { path: 'about', component: AboutComponent },
     { path: 'angular-consultants', loadChildren: () => import('./feature-modules/angular-consultants/angular-consultants.module').then(m => m.AngularConsultantsModule) },
     { path: 'powerbi-consultants', loadChildren: () => import('./feature-modules/powerbi-consultants/powerbi-consultants.module').then(m => m.PowerbiConsultantsModule) },
     { path: '**', component: PageNotFoundComponent }

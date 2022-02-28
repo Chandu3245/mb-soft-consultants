@@ -26,10 +26,10 @@ export class AppComponent {
         label: this.appLables.powerbi,
         route: 'powerbi-consultants'
       },
-      {
-        label: this.appLables.about,
-        route: 'about'
-      }
+      // {
+      //   label: this.appLables.about,
+      //   route: 'about'
+      // }
     ];
   }
 }

@@ -25,7 +25,9 @@
 						"aot": true,
 						"assets": [
 							"src/favicon.ico",
-							"src/assets"
+							"src/assets",
+							"src/web.config",
+							"src/.htaccess"
 						],
 						"styles": [
 							"node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -56,12 +58,12 @@
 								{
 									"type": "initial",
 									"maximumWarning": "2mb",
-									"maximumError": "5mb"
+									"maximumError": "7mb"
 								},
 								{
 									"type": "anyComponentStyle",
-									"maximumWarning": "6kb",
-									"maximumError": "10kb"
+									"maximumWarning": "200kb",
+									"maximumError": "1mb"
 								}
 							]
 						}

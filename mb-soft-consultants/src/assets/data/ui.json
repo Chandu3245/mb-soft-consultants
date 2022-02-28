@@ -5,18 +5,6 @@
     },
     "intro": {
         "description": "Myself Chandrashekar Mittapalli an UI Developer, strongly believes in technology, that it changes lives of people in many ways. I have a decade of experience in designing and developing web tools, keeping UX as most priority. Coding is always interesting and designing your won website is even more awesome. I help aspirants in learning/training them on web technologies that are popular and heavily used in the market.",
-        "socialMedia": [
-            {
-                "title": "Linked In",
-                "icon": "bi-linkedin",
-                "link": "https://www.linkedin.com/in/chandrashekar-mittapalli-198a2967/"
-            },
-            {
-                "title": "Facebook",
-                "icon": "bi-facebook",
-                "link": "https://www.facebook.com/groups/1083652499119660"
-            }
-        ],
         "selfImage": "/assets/images/chandu.png"
     },
     "experience": [
@@ -80,6 +68,12 @@
             "title": "Facebook",
             "icon": "bi-facebook",
             "link": "https://www.facebook.com/groups/1083652499119660"
+        },
+        {
+            "title": "Mail",
+            "icon": "bi-envelope-fill",
+            "link": "mbsoftconsultants@gmail.com"
         }
+
     ]
 }
